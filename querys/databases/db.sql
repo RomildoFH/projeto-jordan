@@ -1,0 +1,10 @@
+-- Active: 1674166547354@@127.0.0.1@3306
+CREATE DATABASE IF NOT EXISTS jordan_prod;
+
+CREATE TABLE jordan_prod.users (
+  id INT NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  password VARCHAR(255) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  PRIMARY KEY (id)
+);
